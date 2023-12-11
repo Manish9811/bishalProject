@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widt, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" class="value1">
+    <input type="text" class="value2">
+
+    <p class="ans"> </p>
+
+
+    <button> Get Value </button>
+</body>
+<script>
+    const val1 = document.querySelector(".value1")
+    const val2 = document.querySelector(".value2")
+
+    document.querySelector('button').addEventListener("click", () => {
+        if (val1.value.length > 0 && val2.value.length > 0) {
+            document.querySelector(".ans").innerHTML = parseInt(val1.value) + parseInt(val2.value)
+        }
+    })
+</script>
+
+</html>
